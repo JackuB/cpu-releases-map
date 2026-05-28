@@ -1,6 +1,6 @@
 # cpu-releases-map
 
-Structured data of Oracle Critical Patch Update (CPU) releases. Scrapes ~65 quarterly CPU advisory pages (2010-2026) and extracts CVE data from risk matrix tables into machine-readable formats.
+Structured data of Oracle Critical Patch Update (CPU) releases. Scrapes CPU advisory pages and extracts CVE data from risk matrix tables into machine-readable formats.
 
 ## Usage
 
