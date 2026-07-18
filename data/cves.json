@@ -1,12 +1,20 @@
 {
   "metadata": {
-    "generated_at": "2026-06-01T12:36:27Z",
-    "total_cpus_scraped": 78,
+    "generated_at": "2026-07-18T06:39:42Z",
+    "total_cpus_scraped": 79,
     "total_cpus_failed": 0,
     "total_cve_entries": 17165,
     "unique_cve_ids": 9686
   },
   "cpu_releases": [
+    {
+      "quarter": "2026-Q3",
+      "label": "CPU Jul 2026",
+      "url": "https://www.oracle.com/security-alerts/cpujul2026.html",
+      "is_java_se": false,
+      "cve_count": 0,
+      "product_families": {}
+    },
     {
       "quarter": "2026-Q1",
       "label": "CPU Jan 2026",
