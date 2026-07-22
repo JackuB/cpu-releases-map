@@ -1,6 +1,6 @@
 # Oracle Critical Patch Update - CVE Summary
 
-Generated: 2026-07-18T06:39:42Z
+Generated: 2026-07-22T07:31:34Z
 
 ## Overview
 
@@ -8,14 +8,14 @@ Generated: 2026-07-18T06:39:42Z
 |--------|-------|
 | CPUs scraped | 79 |
 | CPUs failed | 0 |
-| Total CVE entries | 17165 |
-| Unique CVE IDs | 9686 |
+| Total CVE entries | 18614 |
+| Unique CVE IDs | 10882 |
 
 ## Per-CPU Breakdown
 
 | Quarter | Label | CVEs | Product Families | Highest CVSS |
 |---------|-------|------|-----------------|-------------|
-| 2026-Q3 | [CPU Jul 2026](https://www.oracle.com/security-alerts/cpujul2026.html) | 0 | 0 | - |
+| 2026-Q3 | [CPU Jul 2026](https://www.oracle.com/security-alerts/cpujul2026.html) | 1449 | 32 | 10.0 |
 | 2026-Q1 | [CPU Jan 2026](https://www.oracle.com/security-alerts/cpujan2026.html) | 337 | 30 | 10.0 |
 | 2026-Q2 | [CPU Apr 2026](https://www.oracle.com/security-alerts/cpuapr2026.html) | 481 | 28 | 9.8 |
 | 2025-Q4 | [CPU Oct 2025](https://www.oracle.com/security-alerts/cpuoct2025.html) | 374 | 29 | 9.8 |
