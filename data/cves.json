@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-22T07:31:34Z",
+    "generated_at": "2026-07-25T06:45:33Z",
     "total_cpus_scraped": 79,
     "total_cpus_failed": 0,
     "total_cve_entries": 18614,
@@ -691,6 +691,25 @@
             "notes": ""
           },
           {
+            "cve_id": "CVE-2025-67721",
+            "component": "Third Party (Aircompressor)",
+            "cvss_version": "3.1",
+            "base_score": "5.3",
+            "attack_vector": "Network",
+            "attack_complexity": "High",
+            "privileges_required": "Low",
+            "user_interaction": "None",
+            "scope": "Un- changed",
+            "confidentiality": "High",
+            "integrity": "None",
+            "availability": "None",
+            "package_privilege": "",
+            "protocol": "HTTP",
+            "remote_exploit": "No",
+            "affected_versions": "19.1.0.0.0-19.1.0.0.15",
+            "notes": ""
+          },
+          {
             "cve_id": "CVE-2025-54920",
             "component": "Third Party (Apache Spark)",
             "cvss_version": "3.1",
@@ -726,25 +745,6 @@
             "protocol": "HTTPS",
             "remote_exploit": "Yes",
             "affected_versions": "21.3-21.21, 23.4-23.26.1",
-            "notes": ""
-          },
-          {
-            "cve_id": "CVE-2025-67721",
-            "component": "Third Party (Aircompressor)",
-            "cvss_version": "3.1",
-            "base_score": "5.3",
-            "attack_vector": "Network",
-            "attack_complexity": "High",
-            "privileges_required": "Low",
-            "user_interaction": "None",
-            "scope": "Un- changed",
-            "confidentiality": "High",
-            "integrity": "None",
-            "availability": "None",
-            "package_privilege": "",
-            "protocol": "HTTP",
-            "remote_exploit": "No",
-            "affected_versions": "19.1.0.0.0-19.1.0.0.15",
             "notes": ""
           },
           {
@@ -6238,6 +6238,25 @@
             "notes": ""
           },
           {
+            "cve_id": "CVE-2026-61322",
+            "component": "Internal Operations",
+            "cvss_version": "3.1",
+            "base_score": "8.8",
+            "attack_vector": "Network",
+            "attack_complexity": "Low",
+            "privileges_required": "Low",
+            "user_interaction": "None",
+            "scope": "Un- changed",
+            "confidentiality": "High",
+            "integrity": "High",
+            "availability": "High",
+            "package_privilege": "",
+            "protocol": "HTTP",
+            "remote_exploit": "No",
+            "affected_versions": "12.2.3-12.2.15",
+            "notes": ""
+          },
+          {
             "cve_id": "CVE-2026-62447",
             "component": "Claim LOV",
             "cvss_version": "3.1",
@@ -6311,25 +6330,6 @@
             "protocol": "HTTP",
             "remote_exploit": "No",
             "affected_versions": "12.2.6-12.2.15",
-            "notes": ""
-          },
-          {
-            "cve_id": "CVE-2026-61322",
-            "component": "Internal Operations",
-            "cvss_version": "3.1",
-            "base_score": "8.8",
-            "attack_vector": "Network",
-            "attack_complexity": "Low",
-            "privileges_required": "Low",
-            "user_interaction": "None",
-            "scope": "Un- changed",
-            "confidentiality": "High",
-            "integrity": "High",
-            "availability": "High",
-            "package_privilege": "",
-            "protocol": "HTTP",
-            "remote_exploit": "No",
-            "affected_versions": "12.2.3-12.2.15",
             "notes": ""
           },
           {
@@ -10889,7 +10889,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "12.2.3-12.215",
+            "affected_versions": "12.2.3-12.2.15",
             "notes": ""
           },
           {
@@ -15286,7 +15286,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "15.1.1.0.0",
+            "affected_versions": "12.2.1.4.0, 14.1.2.1.0",
             "notes": ""
           },
           {
@@ -22026,8 +22026,8 @@
             "notes": ""
           },
           {
-            "cve_id": "CVE-2021-22555",
-            "component": "E1 Foundation (swift)",
+            "cve_id": "CVE-2026-60341",
+            "component": "E1 Foundation",
             "cvss_version": "3.1",
             "base_score": "7.8",
             "attack_vector": "Local",
