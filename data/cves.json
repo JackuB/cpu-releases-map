@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-25T06:45:33Z",
+    "generated_at": "2026-08-01T06:54:34Z",
     "total_cpus_scraped": 79,
     "total_cpus_failed": 0,
     "total_cve_entries": 18614,
@@ -21761,7 +21761,7 @@
             "cve_id": "CVE-2026-47059",
             "component": "2D",
             "cvss_version": "3.1",
-            "base_score": "3.7",
+            "base_score": "5.9",
             "attack_vector": "Network",
             "attack_complexity": "High",
             "privileges_required": "None",
@@ -21769,7 +21769,7 @@
             "scope": "Un- changed",
             "confidentiality": "None",
             "integrity": "None",
-            "availability": "Low",
+            "availability": "High",
             "package_privilege": "",
             "protocol": "Multiple",
             "remote_exploit": "Yes",
@@ -22275,6 +22275,25 @@
         ],
         "Oracle MySQL": [
           {
+            "cve_id": "CVE-2026-60163",
+            "component": "Server: Group Replication Plugin",
+            "cvss_version": "3.1",
+            "base_score": "8.8",
+            "attack_vector": "Adjacent Network",
+            "attack_complexity": "Low",
+            "privileges_required": "None",
+            "user_interaction": "None",
+            "scope": "Un- changed",
+            "confidentiality": "High",
+            "integrity": "High",
+            "availability": "High",
+            "package_privilege": "",
+            "protocol": "None",
+            "remote_exploit": "No",
+            "affected_versions": "MySQL Server: 8.4.0-8.4.10, 9.7.0-9.7.1; MySQL Cluster: 8.0.0-8.0.47, 8.4.0-8.4.10, 9.7.0-9.7.1",
+            "notes": ""
+          },
+          {
             "cve_id": "CVE-2026-60193",
             "component": "Connector/Net",
             "cvss_version": "3.1",
@@ -22291,25 +22310,6 @@
             "protocol": "MySQL Protocol",
             "remote_exploit": "No",
             "affected_versions": "9.7.0-9.7.1",
-            "notes": ""
-          },
-          {
-            "cve_id": "CVE-2026-60163",
-            "component": "Server: Group Replication Plugin",
-            "cvss_version": "3.1",
-            "base_score": "8.4",
-            "attack_vector": "Local",
-            "attack_complexity": "Low",
-            "privileges_required": "None",
-            "user_interaction": "None",
-            "scope": "Un- changed",
-            "confidentiality": "High",
-            "integrity": "High",
-            "availability": "High",
-            "package_privilege": "",
-            "protocol": "None",
-            "remote_exploit": "No",
-            "affected_versions": "MySQL Server: 8.4.0-8.4.10, 9.7.0-9.7.1; MySQL Cluster: 8.0.0-8.0.47, 8.4.0-8.4.10, 9.7.0-9.7.1",
             "notes": ""
           },
           {
