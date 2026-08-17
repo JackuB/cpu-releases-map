@@ -237,6 +237,7 @@ def _parse_table(table: Tag, cpu_release: CPURelease, product_family: str, cvss_
             cve_id=cve_id,
             cpu_quarter=cpu_release.quarter,
             cpu_url=cpu_release.url,
+            release_type=cpu_release.release_type,
             product_family=product_family,
             cvss_version=cvss_version,
             component=get_field("component"),

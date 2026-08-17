@@ -13,22 +13,25 @@ from .models import CPURelease
 
 logger = logging.getLogger(__name__)
 
-# Matches URLs like /security-alerts/cpujan2026.html or /security-alerts/javacpufeb2013.html
+# Matches URLs like /security-alerts/cpujan2026.html, /security-alerts/javacpufeb2013.html,
+# or /security-alerts/cspumay2026.html (Oracle's monthly Critical Security Patch Update,
+# introduced May 2026 to fill the months between quarterly CPUs).
 CPU_URL_PATTERN = re.compile(
-    r"/security-alerts/(java)?cpu([a-z]+)(\d{4})(v\d+|update)?\.html",
+    r"/security-alerts/(java)?(cpu|cspu)([a-z]+)(\d{4})(v\d+|update)?\.html",
     re.IGNORECASE,
 )
 
 
 def _parse_cpu_url(url: str) -> CPURelease | None:
-    """Parse a CPU URL into a CPURelease shell."""
+    """Parse a CPU/CSPU URL into a CPURelease shell."""
     match = CPU_URL_PATTERN.search(url)
     if not match:
         return None
 
     is_java = match.group(1) is not None
-    month_raw = match.group(2).lower()
-    year = int(match.group(3))
+    release_type = match.group(2).upper()
+    month_raw = match.group(3).lower()
+    year = int(match.group(4))
 
     # Normalize full month names to abbreviations
     month = MONTH_FULL_TO_ABBR.get(month_raw, month_raw)
@@ -48,7 +51,7 @@ def _parse_cpu_url(url: str) -> CPURelease | None:
         full_url = url
 
     label_prefix = "Java SE " if is_java else ""
-    label = f"{label_prefix}CPU {month.capitalize()} {year}"
+    label = f"{label_prefix}{release_type} {month.capitalize()} {year}"
 
     return CPURelease(
         url=full_url,
@@ -57,6 +60,7 @@ def _parse_cpu_url(url: str) -> CPURelease | None:
         year=year,
         quarter=quarter,
         is_java_se=is_java,
+        release_type=release_type,
     )
 
 

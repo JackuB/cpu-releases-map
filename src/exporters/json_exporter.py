@@ -47,6 +47,7 @@ def export_json(result: ScrapeResult, output_path: Path) -> None:
             # Remove redundant fields that are on the release level
             del entry_dict["cpu_quarter"]
             del entry_dict["cpu_url"]
+            del entry_dict["release_type"]
             del entry_dict["product_family"]
             # Remove None values
             entry_dict = {k: v for k, v in entry_dict.items() if v is not None}
@@ -57,6 +58,7 @@ def export_json(result: ScrapeResult, output_path: Path) -> None:
             "label": release.label,
             "url": release.url,
             "is_java_se": release.is_java_se,
+            "release_type": release.release_type,
             "cve_count": len(release.cve_entries),
             "product_families": dict(families),
         }

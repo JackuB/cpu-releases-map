@@ -13,6 +13,7 @@ class CVEEntry:
     cve_id: str
     cpu_quarter: str  # e.g., "2026-Q1"
     cpu_url: str
+    release_type: str  # "CPU" or "CSPU"
     product_family: str
     component: str = ""
     cvss_version: str = ""  # "3.1", "3.0", "2.0"
@@ -47,6 +48,7 @@ class CPURelease:
     year: int
     quarter: str  # e.g., "2026-Q1"
     is_java_se: bool = False
+    release_type: str = "CPU"  # "CPU" (quarterly) or "CSPU" (monthly, started May 2026)
     cve_entries: list[CVEEntry] = field(default_factory=list)
     error: Optional[str] = None
 

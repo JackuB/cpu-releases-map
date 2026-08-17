@@ -41,6 +41,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Skip Java SE-specific CPU pages",
     )
     parser.add_argument(
+        "--skip-cspu",
+        action="store_true",
+        help="Skip monthly Critical Security Patch Update (CSPU) pages",
+    )
+    parser.add_argument(
         "--only-recent",
         type=int,
         default=0,
@@ -81,6 +86,10 @@ def run(args: argparse.Namespace) -> int:
     if args.skip_java_se:
         releases = [r for r in releases if not r.is_java_se]
         logger.info("After filtering Java SE: %d releases", len(releases))
+
+    if args.skip_cspu:
+        releases = [r for r in releases if r.release_type != "CSPU"]
+        logger.info("After filtering CSPU: %d releases", len(releases))
 
     if args.only_recent > 0:
         releases = releases[-args.only_recent:]

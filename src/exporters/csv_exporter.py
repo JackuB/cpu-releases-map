@@ -11,6 +11,7 @@ CSV_COLUMNS = [
     "cve_id",
     "cpu_quarter",
     "cpu_url",
+    "release_type",
     "product_family",
     "component",
     "cvss_version",

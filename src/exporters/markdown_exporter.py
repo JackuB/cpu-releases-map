@@ -34,8 +34,8 @@ def export_markdown(result: ScrapeResult, output_path: Path) -> None:
     # Per-CPU breakdown
     lines.append("## Per-CPU Breakdown")
     lines.append("")
-    lines.append("| Quarter | Label | CVEs | Product Families | Highest CVSS |")
-    lines.append("|---------|-------|------|-----------------|-------------|")
+    lines.append("| Quarter | Type | Label | CVEs | Product Families | Highest CVSS |")
+    lines.append("|---------|------|-------|------|-----------------|-------------|")
 
     sorted_releases = sorted(
         result.cpu_releases,
@@ -46,7 +46,7 @@ def export_markdown(result: ScrapeResult, output_path: Path) -> None:
     for release in sorted_releases:
         if release.error and not release.cve_entries:
             lines.append(
-                f"| {release.quarter} | [{release.label}]({release.url}) "
+                f"| {release.quarter} | {release.release_type} | [{release.label}]({release.url}) "
                 f"| ERROR | - | - |"
             )
             continue
@@ -62,7 +62,7 @@ def export_markdown(result: ScrapeResult, output_path: Path) -> None:
 
         score_str = f"{max_score:.1f}" if max_score > 0 else "-"
         lines.append(
-            f"| {release.quarter} | [{release.label}]({release.url}) "
+            f"| {release.quarter} | {release.release_type} | [{release.label}]({release.url}) "
             f"| {len(release.cve_entries)} | {len(families)} | {score_str} |"
         )
 

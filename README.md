@@ -1,6 +1,8 @@
 # cpu-releases-map
 
-Structured data of Oracle Critical Patch Update (CPU) releases. Scrapes CPU advisory pages and extracts CVE data from risk matrix tables into machine-readable formats.
+Structured data of Oracle Critical Patch Update (CPU) and Critical Security Patch Update (CSPU) releases. Scrapes advisory pages and extracts CVE data from risk matrix tables into machine-readable formats.
+
+Oracle ships security patches on the third Tuesday of every month: quarterly CPUs in January/April/July/October, and monthly CSPUs (introduced May 2026) the other eight months. Both use identical risk-matrix HTML, so a single scraper/parser covers both; each release is tagged `release_type: "CPU"` or `"CSPU"` in the output.
 
 ## Usage
 
@@ -17,6 +19,7 @@ python -m src.main --verbose
 | `--no-cache` | Disable HTTP cache (re-fetch all pages) |
 | `--output-dir DIR` | Output directory (default: `data/`) |
 | `--skip-java-se` | Skip Java SE-specific CPU pages |
+| `--skip-cspu` | Skip monthly Critical Security Patch Update (CSPU) pages |
 | `--only-recent N` | Only scrape the N most recent CPUs |
 
 ### Examples
