@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-19T06:32:06Z",
+    "generated_at": "2026-08-21T06:45:45Z",
     "total_cpus_scraped": 82,
     "total_cpus_failed": 0,
     "total_cve_entries": 19837,
@@ -39539,7 +39539,7 @@
             "package_privilege": "Authenticated User",
             "protocol": "Oracle Net",
             "remote_exploit": "No",
-            "affected_versions": "23.4.0-23.26.3",
+            "affected_versions": "23.4.0-23.26.2",
             "notes": ""
           },
           {

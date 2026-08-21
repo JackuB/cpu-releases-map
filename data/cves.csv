@@ -681,7 +681,7 @@ CVE-2026-60426,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CP
 CVE-2026-60444,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle Fusion Middleware,Content Server,3.1,8.5,Network,Low,Low,None,Changed,High,Low,None,,,,,HTTP,No,"12.2.1.4.0, 14.1.2.0.0",
 CVE-2026-60452,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle Fusion Middleware,Core,3.1,8.5,Network,Low,Low,None,Changed,High,Low,None,,,,,HTTP,No,"12.2.1.4.0, 14.1.2.0.0",
 CVE-2026-60193,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle MySQL,Connector/Net,3.1,8.5,Network,High,Low,None,Changed,High,High,High,,,,,MySQL Protocol,No,9.7.0-9.7.1,
-CVE-2026-71062,2026-Q3,https://www.oracle.com/security-alerts/cspuaug2026.html,CSPU,Oracle Database Server,RDBMS,3.1,8.5,Network,High,Low,None,Changed,High,High,High,,,,Authenticated User,Oracle Net,No,23.4.0-23.26.3,
+CVE-2026-71062,2026-Q3,https://www.oracle.com/security-alerts/cspuaug2026.html,CSPU,Oracle Database Server,RDBMS,3.1,8.5,Network,High,Low,None,Changed,High,High,High,,,,Authenticated User,Oracle Net,No,23.4.0-23.26.2,
 CVE-2026-70728,2026-Q3,https://www.oracle.com/security-alerts/cspuaug2026.html,CSPU,Oracle Autonomous Health Framework,Trace File Analyzer,3.1,8.5,Network,Low,Low,None,Changed,High,Low,None,,,,,HTTP,No,"26-26.1.0, 26.2.0, 26.3.1, 26.5.0, 26.5.2",
 CVE-2026-71002,2026-Q3,https://www.oracle.com/security-alerts/cspuaug2026.html,CSPU,Oracle Commerce,Experience Manager,3.1,8.5,Network,Low,Low,None,Changed,Low,High,None,,,,,HTTP,No,11.4.0,
 CVE-2026-70718,2026-Q3,https://www.oracle.com/security-alerts/cspuaug2026.html,CSPU,Oracle E-Business Suite,Internal Operations,3.1,8.5,Network,High,Low,None,Changed,High,High,High,,,,,HTTP,No,12.2.3-12.2.15,
