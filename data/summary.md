@@ -1,6 +1,6 @@
 # Oracle Critical Patch Update - CVE Summary
 
-Generated: 2026-08-25T06:29:50Z
+Generated: 2026-09-01T10:46:58Z
 
 ## Overview
 
@@ -8,7 +8,7 @@ Generated: 2026-08-25T06:29:50Z
 |--------|-------|
 | CPUs scraped | 82 |
 | CPUs failed | 0 |
-| Total CVE entries | 19837 |
+| Total CVE entries | 19836 |
 | Unique CVE IDs | 12049 |
 
 ## Per-CPU Breakdown
@@ -17,7 +17,7 @@ Generated: 2026-08-25T06:29:50Z
 |---------|------|-------|------|-----------------|-------------|
 | 2026-Q2 | CSPU | [CSPU May 2026](https://www.oracle.com/security-alerts/cspumay2026.html) | 35 | 5 | 10.0 |
 | 2026-Q2 | CSPU | [CSPU Jun 2026](https://www.oracle.com/security-alerts/cspujun2026.html) | 245 | 11 | 10.0 |
-| 2026-Q3 | CPU | [CPU Jul 2026](https://www.oracle.com/security-alerts/cpujul2026.html) | 1449 | 32 | 10.0 |
+| 2026-Q3 | CPU | [CPU Jul 2026](https://www.oracle.com/security-alerts/cpujul2026.html) | 1448 | 32 | 10.0 |
 | 2026-Q1 | CPU | [CPU Jan 2026](https://www.oracle.com/security-alerts/cpujan2026.html) | 337 | 30 | 10.0 |
 | 2026-Q3 | CSPU | [CSPU Aug 2026](https://www.oracle.com/security-alerts/cspuaug2026.html) | 943 | 23 | 10.0 |
 | 2026-Q2 | CPU | [CPU Apr 2026](https://www.oracle.com/security-alerts/cpuapr2026.html) | 481 | 28 | 9.8 |

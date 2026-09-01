@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-08-25T06:29:50Z",
+    "generated_at": "2026-09-01T10:46:58Z",
     "total_cpus_scraped": 82,
     "total_cpus_failed": 0,
-    "total_cve_entries": 19837,
+    "total_cve_entries": 19836,
     "unique_cve_ids": 12049
   },
   "cpu_releases": [
@@ -5385,7 +5385,7 @@
       "url": "https://www.oracle.com/security-alerts/cpujul2026.html",
       "is_java_se": false,
       "release_type": "CPU",
-      "cve_count": 1449,
+      "cve_count": 1448,
       "product_families": {
         "Oracle Database Server": [
           {
@@ -26903,25 +26903,6 @@
         ],
         "Oracle Java SE": [
           {
-            "cve_id": "CVE-2026-62574",
-            "component": "Install",
-            "cvss_version": "3.1",
-            "base_score": "7.8",
-            "attack_vector": "Local",
-            "attack_complexity": "Low",
-            "privileges_required": "Low",
-            "user_interaction": "None",
-            "scope": "Un- changed",
-            "confidentiality": "High",
-            "integrity": "High",
-            "availability": "High",
-            "package_privilege": "",
-            "protocol": "None",
-            "remote_exploit": "No",
-            "affected_versions": "Oracle Java SE: 8u491, 11.0.31, 17.0.19, 21.0.11, 25.0.3, 26.0.1; Oracle GraalVM for JDK: 17.0.19, 21.0.11; Oracle GraalVM Enterprise Edition: 21.3.18",
-            "notes": ""
-          },
-          {
             "cve_id": "CVE-2026-47057",
             "component": "Scripting",
             "cvss_version": "3.1",
@@ -44178,7 +44159,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.3",
+            "affected_versions": "3.0.0-3.2.19, 4.0.0-4.5.2",
             "notes": ""
           },
           {
@@ -44406,7 +44387,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "1.0.0-1.4.19, 3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -44425,7 +44406,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "3.0.0-3.2.17, 4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -44444,7 +44425,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -44463,7 +44444,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -44482,7 +44463,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -44501,7 +44482,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "1.4.20",
+            "affected_versions": "1.0.0-1.4.19",
             "notes": ""
           },
           {
@@ -45204,7 +45185,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -45223,7 +45204,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -45242,7 +45223,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -45280,7 +45261,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -45375,7 +45356,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -45394,7 +45375,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -45413,7 +45394,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -45432,7 +45413,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -45451,7 +45432,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "1.4.19",
+            "affected_versions": "1.0.0-1.4.18",
             "notes": ""
           },
           {
@@ -45470,7 +45451,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "1.4.19",
+            "affected_versions": "1.0.0-1.4.18",
             "notes": ""
           },
           {
@@ -46268,7 +46249,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.20",
+            "affected_versions": "3.0.0-3.2.19",
             "notes": ""
           },
           {
@@ -46458,7 +46439,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -46572,7 +46553,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.3",
+            "affected_versions": "4.0.0-4.5.2",
             "notes": ""
           },
           {
@@ -46591,7 +46572,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.3",
+            "affected_versions": "4.0.0-4.5.2",
             "notes": ""
           },
           {
@@ -46610,7 +46591,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -46629,7 +46610,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "1.4.19",
+            "affected_versions": "1.0.0-1.4.18",
             "notes": ""
           },
           {
@@ -46648,7 +46629,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -46800,7 +46781,7 @@
             "package_privilege": "",
             "protocol": "HTTPS",
             "remote_exploit": "No",
-            "affected_versions": "4.5.0",
+            "affected_versions": "1.0.0-1.4.18, 3.0.0-3.2.17, 4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47275,7 +47256,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47294,7 +47275,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "1.4.20",
+            "affected_versions": "1.0.0-1.4.19",
             "notes": ""
           },
           {
@@ -47313,7 +47294,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47332,7 +47313,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "3.2.18",
+            "affected_versions": "1.0.0-1.4.18, 3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47351,7 +47332,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47370,7 +47351,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -47389,7 +47370,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -47408,7 +47389,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47427,7 +47408,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47446,7 +47427,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -47465,7 +47446,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -47484,7 +47465,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47503,7 +47484,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47522,7 +47503,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47541,7 +47522,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.20",
+            "affected_versions": "3.0.0-3.2.19",
             "notes": ""
           },
           {
@@ -47560,7 +47541,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -47579,7 +47560,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47598,7 +47579,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47617,7 +47598,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47636,7 +47617,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -47655,7 +47636,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -47674,7 +47655,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -47826,7 +47807,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "3.0.0-3.2.17, 4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47883,7 +47864,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47902,7 +47883,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47921,7 +47902,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47940,7 +47921,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.3",
+            "affected_versions": "4.0.0-4.5.2",
             "notes": ""
           },
           {
@@ -47959,7 +47940,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -47978,7 +47959,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -47997,7 +47978,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -48016,7 +47997,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48035,7 +48016,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48054,7 +48035,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.3",
+            "affected_versions": "4.0.0-4.5.2",
             "notes": ""
           },
           {
@@ -48244,7 +48225,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48301,7 +48282,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48320,7 +48301,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48339,7 +48320,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48358,7 +48339,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48377,7 +48358,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48396,7 +48377,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48415,7 +48396,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -48434,7 +48415,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48453,7 +48434,7 @@
             "package_privilege": "",
             "protocol": "HTTP/2",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48491,7 +48472,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -48510,7 +48491,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48529,7 +48510,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48548,7 +48529,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48567,7 +48548,7 @@
             "package_privilege": "",
             "protocol": "None",
             "remote_exploit": "No",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48586,7 +48567,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "3.0.0-3.2.17, 4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48605,7 +48586,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -48624,7 +48605,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48643,7 +48624,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48662,7 +48643,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48681,7 +48662,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48700,7 +48681,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48719,7 +48700,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48738,7 +48719,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -48757,7 +48738,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "3.0.0-3.2.17, 4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48776,7 +48757,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48795,7 +48776,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48814,7 +48795,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48833,7 +48814,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48852,7 +48833,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48871,7 +48852,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48890,7 +48871,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -48909,7 +48890,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.19",
+            "affected_versions": "3.0.0-3.2.18",
             "notes": ""
           },
           {
@@ -48928,7 +48909,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -48947,7 +48928,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.0",
+            "affected_versions": "4.0.0-4.4.1",
             "notes": ""
           },
           {
@@ -48966,7 +48947,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -48985,7 +48966,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.3",
+            "affected_versions": "4.0.0-4.5.2",
             "notes": ""
           },
           {
@@ -49004,7 +48985,7 @@
             "package_privilege": "",
             "protocol": "HTTPS",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -49023,7 +49004,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -49042,7 +49023,7 @@
             "package_privilege": "",
             "protocol": "None",
             "remote_exploit": "No",
-            "affected_versions": "4.5.1",
+            "affected_versions": "4.0.0-4.5.0",
             "notes": ""
           },
           {
@@ -49080,7 +49061,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "No",
-            "affected_versions": "3.2.18",
+            "affected_versions": "3.0.0-3.2.17",
             "notes": ""
           },
           {
@@ -49099,7 +49080,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "3.2.20",
+            "affected_versions": "3.0.0-3.2.19",
             "notes": ""
           },
           {
@@ -49118,7 +49099,7 @@
             "package_privilege": "",
             "protocol": "HTTP",
             "remote_exploit": "Yes",
-            "affected_versions": "1.4.20",
+            "affected_versions": "1.0.0-1.4.19",
             "notes": ""
           }
         ],
