@@ -1371,7 +1371,6 @@ CVE-2026-60271,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CP
 CVE-2026-60625,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle Fusion Middleware,Studio,3.1,7.8,Local,Low,Low,None,Un- changed,High,High,High,,,,,None,No,"12.2.1.4.0, 14.1.2.0.0",,
 CVE-2026-60454,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle Fusion Middleware,Core,3.1,7.8,Local,Low,Low,None,Un- changed,High,High,High,,,,,None,No,"12.2.1.4.0, 14.1.2.0.0",,
 CVE-2026-60530,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle Fusion Middleware,mod_http2.so,3.1,7.8,Local,Low,Low,None,Un- changed,High,High,High,,,,,None,No,14.1.2.0.0,,
-CVE-2026-62574,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle Java SE,Install,3.1,7.8,Local,Low,Low,None,Un- changed,High,High,High,,,,,None,No,"Oracle Java SE: 8u491, 11.0.31, 17.0.19, 21.0.11, 25.0.3, 26.0.1; Oracle GraalVM for JDK: 17.0.19, 21.0.11; Oracle GraalVM Enterprise Edition: 21.3.18",,
 CVE-2026-60341,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle JD Edwards,E1 Foundation,3.1,7.8,Local,Low,Low,None,Un- changed,High,High,High,,,,,None,No,9.2,,
 CVE-2026-60600,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle PeopleSoft,Projects,3.1,7.8,Local,Low,None,Required,Un- changed,High,High,High,,,,,None,No,9.2,,
 CVE-2026-61055,2026-Q3,https://www.oracle.com/security-alerts/cpujul2026.html,CPU,Oracle PeopleSoft,Security,3.1,7.8,Local,Low,Low,None,Un- changed,High,High,High,,,,,None,No,9.2,,
