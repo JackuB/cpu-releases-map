@@ -35,7 +35,8 @@ class CVEEntry:
     protocol: str = ""
     remote_exploit: str = ""
     affected_versions: str = ""
-    notes: str = ""
+    notes: str = ""  # the matrix cell, e.g. "See Note 1"
+    note_text: str = ""  # that note's text from the list below the matrix
 
 
 @dataclass

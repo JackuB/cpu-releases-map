@@ -60,5 +60,5 @@ Can also be triggered manually via `workflow_dispatch`.
 
 1. **Discovery**: Fetches Oracle's security alerts index and archive pages to find all CPU advisory URLs
 2. **Fetching**: Downloads each CPU page with rate limiting, retries, and local file caching
-3. **Parsing**: Extracts CVE data from HTML risk matrix tables, handling CVSS 2.0, 3.0, and 3.1 column formats
+3. **Parsing**: Extracts CVE data from HTML risk matrix tables, handling CVSS 2.0, 3.0, and 3.1 column formats. A matrix's Notes column only says "See Note 2"; the parser resolves that against the numbered list printed below the same matrix and writes the note itself to `note_text`. For Java SE that note is where Oracle says whether a CVE can be exploited only through sandboxed applets and Web Start, or also through APIs a server uses.
 4. **Export**: Writes structured data in four formats

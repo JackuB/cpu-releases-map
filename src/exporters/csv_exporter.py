@@ -32,6 +32,7 @@ CSV_COLUMNS = [
     "remote_exploit",
     "affected_versions",
     "notes",
+    "note_text",
 ]
 
 

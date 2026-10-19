@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 CVE_PATTERN = re.compile(r"CVE-\d{4}-\d{4,}")
 CVSS_VERSION_PATTERN = re.compile(r"CVSS\s+VERSION\s+(\d+\.\d+)", re.IGNORECASE)
+NOTE_REF_PATTERN = re.compile(r"See\s+Note\s*(\d+)", re.IGNORECASE)
 
 
 def _normalize_header(text: str) -> str:
@@ -191,7 +192,39 @@ def _build_column_map(table: Tag) -> dict[str, int]:
     return column_map
 
 
-def _parse_table(table: Tag, cpu_release: CPURelease, product_family: str, cvss_version: str) -> list[CVEEntry]:
+def _find_notes(table: Tag, next_table: Tag | None) -> list[str]:
+    """Return the numbered notes Oracle prints below a risk matrix.
+
+    The matrix's Notes column only says "See Note 2"; the text is the second
+    item of the first <ol> after the table. The search stops at the next risk
+    matrix, so a product family without notes never borrows another's.
+    """
+    for element in table.find_all_next():
+        if element is next_table:
+            break
+        if element.name == "ol":
+            return [_get_cell_text(li) for li in element.find_all("li", recursive=False)]
+    return []
+
+
+def _resolve_note(notes_cell: str, notes: list[str]) -> str:
+    """Return the text of the note a Notes cell refers to, or "" if none."""
+    match = NOTE_REF_PATTERN.search(notes_cell)
+    if not match:
+        return ""
+    index = int(match.group(1)) - 1
+    if 0 <= index < len(notes):
+        return notes[index]
+    return ""
+
+
+def _parse_table(
+    table: Tag,
+    cpu_release: CPURelease,
+    product_family: str,
+    cvss_version: str,
+    notes: list[str],
+) -> list[CVEEntry]:
     """Parse a single risk matrix table into CVEEntry objects."""
     column_map = _build_column_map(table)
 
@@ -258,6 +291,7 @@ def _parse_table(table: Tag, cpu_release: CPURelease, product_family: str, cvss_
             remote_exploit=get_field("remote_exploit"),
             affected_versions=get_field("affected_versions"),
             notes=get_field("notes"),
+            note_text=_resolve_note(get_field("notes"), notes),
         )
         entries.append(entry)
 
@@ -272,14 +306,11 @@ def parse_cpu_page(html: str, cpu_release: CPURelease) -> list[CVEEntry]:
     soup = BeautifulSoup(html, "html.parser")
     all_entries: list[CVEEntry] = []
 
-    tables = soup.find_all("table")
-    risk_tables_found = 0
+    risk_tables = [table for table in soup.find_all("table") if _is_risk_matrix_table(table)]
+    risk_tables_found = len(risk_tables)
 
-    for table in tables:
-        if not _is_risk_matrix_table(table):
-            continue
-
-        risk_tables_found += 1
+    for i, table in enumerate(risk_tables):
+        next_table = risk_tables[i + 1] if i + 1 < len(risk_tables) else None
         product_family = _find_product_family(table)
         cvss_version = _detect_cvss_version(table)
 
@@ -290,7 +321,8 @@ def parse_cpu_page(html: str, cpu_release: CPURelease) -> list[CVEEntry]:
             cpu_release.label,
         )
 
-        entries = _parse_table(table, cpu_release, product_family, cvss_version)
+        notes = _find_notes(table, next_table)
+        entries = _parse_table(table, cpu_release, product_family, cvss_version, notes)
         all_entries.extend(entries)
 
         logger.debug("  Found %d CVEs in %s", len(entries), product_family)
