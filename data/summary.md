@@ -1,6 +1,6 @@
 # Oracle Critical Patch Update - CVE Summary
 
-Generated: 2026-10-20T20:10:54Z
+Generated: 2026-10-25T10:24:49Z
 
 ## Overview
 
