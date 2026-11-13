@@ -1,5 +1,7 @@
 # cpu-releases-map
 
+> **Status: frozen.** This repo is kept as a snapshot of Oracle's CPU/CSPU risk matrices scraped from the advisory HTML pages. The scheduled run is off (manual trigger only). For current data we read Oracle's CSAF advisories in [vee-r-tee](https://github.com/waratek/vee-r-tee/pull/105), which uses this scrape for the releases it already covers and CSAF for everything newer.
+
 Structured data of Oracle Critical Patch Update (CPU) and Critical Security Patch Update (CSPU) releases. Scrapes advisory pages and extracts CVE data from risk matrix tables into machine-readable formats.
 
 Oracle ships security patches on the third Tuesday of every month: quarterly CPUs in January/April/July/October, and monthly CSPUs (introduced May 2026) the other eight months. Both use identical risk-matrix HTML, so a single scraper/parser covers both; each release is tagged `release_type: "CPU"` or `"CSPU"` in the output.
